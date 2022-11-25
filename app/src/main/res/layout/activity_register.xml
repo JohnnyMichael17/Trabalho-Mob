@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_cor"
+    tools:context=".RegisterActivity">
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/bg_edit_text"
+        android:ems="10"
+        android:hint="    Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_phone" />
+
+    <EditText
+        android:id="@+id/edit_phone"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/bg_edit_text"
+        android:ems="10"
+        android:hint="    Telefone"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_name2" />
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/bg_edit_text"
+        android:ems="10"
+        android:hint="    Nome"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_photo" />
+
+    <EditText
+        android:id="@+id/edit_senha"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_edit_text"
+        android:ems="10"
+        android:hint="    Senha"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/edit_email"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edit_email"
+        app:layout_constraintTop_toBottomOf="@+id/edit_email" />
+
+    <EditText
+        android:id="@+id/edit_name2"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_edit_text"
+        android:ems="10"
+        android:hint="    Sobrenome"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edit_email"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edit_email"
+        app:layout_constraintTop_toBottomOf="@+id/edit_name" />
+
+    <Button
+        android:id="@+id/button_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="48dp"
+        android:text="Cadastrar"
+        app:layout_constraintEnd_toEndOf="@+id/edit_senha"
+        app:layout_constraintStart_toStartOf="@+id/edit_senha"
+        app:layout_constraintTop_toBottomOf="@+id/edit_senha" />
+
+    <Button
+        android:id="@+id/button_photo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/bg_botton_photo_circular"
+        android:text="Foto"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_photo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/bg_botton_photo_circular"
+        app:civ_border_width="3dp"
+        app:civ_border_color="@color/purple_700"
+        app:layout_constraintBottom_toBottomOf="@+id/button_photo"
+        app:layout_constraintEnd_toEndOf="@+id/button_photo"
+        app:layout_constraintStart_toStartOf="@+id/button_photo"
+        app:layout_constraintTop_toTopOf="@+id/button_photo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

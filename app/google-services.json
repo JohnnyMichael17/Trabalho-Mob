@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "588537593489",
+    "project_id": "my-chat-johnny-17",
+    "storage_bucket": "my-chat-johnny-17.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:588537593489:android:aeb397b3f4e3cfd0d0c930",
+        "android_client_info": {
+          "package_name": "com.example.mychatbox"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "588537593489-p63469387664hkajh64piv2go3f421tg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWUqOAvLl1LJ3hqXtJ3RYpYL-j4RQtZKY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "588537593489-p63469387664hkajh64piv2go3f421tg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
