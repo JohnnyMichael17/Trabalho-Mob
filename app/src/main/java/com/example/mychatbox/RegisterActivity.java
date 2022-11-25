@@ -4,9 +4,6 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.io.InputStreamReader;
-import java.io.BufferedReader;
-
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
@@ -174,7 +171,7 @@ public class RegisterActivity extends AppCompatActivity {
                                         .addOnFailureListener(new OnFailureListener() {
                                             @Override
                                             public void onFailure(@NonNull Exception e) {
-                                                Log.i("ree", e.getMessage());
+                                                Log.i("Teste", e.getMessage());
                                             }
                                         });
                             }
