@@ -154,24 +154,23 @@ public class RegisterActivity extends AppCompatActivity {
                                 User user = new User(id, nome, sobrenome, telefone, profileUrl);
 
                                 FirebaseFirestore.getInstance().collection("users")
-                                        .add(user)
-                                        .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                                        .document(id)
+                                        .set(user)
+                                        .addOnSuccessListener(new OnSuccessListener<Void>() {
                                             @Override
-                                            public void onSuccess(DocumentReference documentReference) {
-                                                Log.i("Teste", documentReference.getId());
+                                            public void onSuccess(Void unused) {
 
-                                                Intent intent= new Intent(RegisterActivity.this, MessengerActivity.class);
+                                                Intent intent = new Intent(RegisterActivity.this, MessengerActivity.class);
 
                                                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
 
                                                 startActivity(intent);
-                                            }
 
+                                            }
                                         })
                                         .addOnFailureListener(new OnFailureListener() {
                                             @Override
                                             public void onFailure(@NonNull Exception e) {
-                                                Log.i("Teste", e.getMessage());
                                             }
                                         });
                             }
